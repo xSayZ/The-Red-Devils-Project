@@ -1,0 +1,1 @@
+VAR weapon_name = ""

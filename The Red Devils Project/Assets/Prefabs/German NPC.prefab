@@ -142,7 +142,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.25
 --- !u!114 &4903164093575105533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,6 +271,14 @@ PrefabInstance:
     - target: {fileID: 814223177427455329, guid: 860570b33b19c3440b7114f58efbd942, type: 3}
       propertyPath: m_Name
       value: VisualCue
+      objectReference: {fileID: 0}
+    - target: {fileID: 814223177427455343, guid: 860570b33b19c3440b7114f58efbd942, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 814223177427455343, guid: 860570b33b19c3440b7114f58efbd942, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1380632495
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 860570b33b19c3440b7114f58efbd942, type: 3}

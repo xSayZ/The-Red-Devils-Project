@@ -16,6 +16,9 @@ public class BattleSystem : MonoBehaviour
 
     public event Action<bool> OnBattleEnd;
 
+    [SerializeField] private SoundManager soundManager;
+
+
     BattleState state;
     int currentAction;
     int currentMove;
@@ -29,6 +32,7 @@ public class BattleSystem : MonoBehaviour
     {
         GameManager.GetInstance().ToggleBattleState();
 
+        soundManager.BattleSoundSetup();
         playerUnit.Setup();
         enemyUnit.Setup();
         playerHud.SetData(playerUnit.Enemy);
@@ -128,7 +132,7 @@ public class BattleSystem : MonoBehaviour
 
     public void HandleUpdate()
     {
-        if(state == BattleState.PlayerAction)
+        if (state == BattleState.PlayerAction)
         {
             HandleActionSelection();
         }
@@ -163,7 +167,7 @@ public class BattleSystem : MonoBehaviour
        }
        else if (currentAction == 1) 
        {
-           // Run
+            // Run
        }
     }
 

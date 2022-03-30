@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{91550f0b-14ea-4dba-b142-dd7ebaf9d1d6}">
+		<property name="assetPath">
+			<value>Sabaton - The Attack Of The Dead Men - 8 bit metal.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>222.9692290249433</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2d433700-2a2d-4a25-96db-ad1be9bda51b}</destination>
+		</relationship>
+	</object>
+</objects>

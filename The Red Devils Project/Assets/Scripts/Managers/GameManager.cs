@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 
     private static GameManager instance;
 
-    private bool isBattling;
+    private bool isBattling = false;
 
     GameState state;
 
@@ -33,20 +33,20 @@ public class GameManager : MonoBehaviour
         battleSystem.OnBattleEnd += EndBattle;
     }
 
-    void StartBattle()
+    public void StartBattle()
     {
         state = GameState.Battle;
         battleSystem.gameObject.SetActive(true);
         worldCamera.gameObject.SetActive(false);
-        SwitchFocusedPlayerControlScheme();
     }
 
-    void EndBattle(bool won)
+    public void EndBattle(bool won)
     {
         state = GameState.FreeRoam;
         battleSystem.gameObject.SetActive(false);
         worldCamera.gameObject.SetActive(true);
-        SwitchFocusedPlayerControlScheme();
+        ToggleBattleState();
+        SoundManager.GetInstance().FreeRoamSoundSetup();
     }
 
     public static GameManager GetInstance()
@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
         {
             playerController.HandleFixedUpdate();
         }
-        else if (state == GameState.FreeRoam)
+        else if (state == GameState.Battle)
         {
             battleSystem.HandleUpdate();
         }

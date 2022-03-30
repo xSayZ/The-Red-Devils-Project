@@ -1,1 +1,1 @@
-﻿{"inkVersion":20,"root":[["^A rifleman decided to fight you!","\n","^What do you want to do?","\n",["done",{"#f":5,"#n":"g-0"}],null],"done",{"#f":1}],"listDefs":{}}
+﻿{"inkVersion":20,"root":[["\n","^A rifleman decided to fight you!","\n","^What do you want to do?","\n","ev",{"x()":"startBattle"},"pop","/ev","\n","end",["done",{"#f":5,"#n":"g-0"}],null],"done",{"startBattle":["ev",1,"/ev","~ret",{"#f":1}],"global decl":["ev","str","^","/str",{"VAR=":"weapon_name"},"/ev","end",null],"#f":1}],"listDefs":{}}

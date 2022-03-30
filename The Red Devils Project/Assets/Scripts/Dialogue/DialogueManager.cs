@@ -119,11 +119,18 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         if (pauseMenuManager.isPaused)
         {
             return;
+            Debug.Log(pauseMenuManager.isPaused);
         }
 
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
+
+        currentStory.BindExternalFunction("startBattle", () =>
+        {
+            dialoguePanel.SetActive(false);
+            GameManager.GetInstance().StartBattle();
+        });
 
         dialogueVariables.StartListening(currentStory);
 
@@ -131,9 +138,9 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
 
     }
 
-    private IEnumerator ExitDialogueMode()
+    public IEnumerator ExitDialogueMode()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
 
         dialogueVariables.StopListening(currentStory);
 
@@ -156,6 +163,7 @@ public class DialogueManager : MonoBehaviour, IDataPersistence
         }
         else
         {
+
             StartCoroutine(ExitDialogueMode());
             
         }

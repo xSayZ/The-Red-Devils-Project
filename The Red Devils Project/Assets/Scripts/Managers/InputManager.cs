@@ -219,4 +219,5 @@ public class InputManager : MonoBehaviour {
         playerInput.SwitchCurrentActionMap(actionMapBattleControls);
         Debug.Log("Loaded into " + actionMapBattleControls);
     }
+
 }

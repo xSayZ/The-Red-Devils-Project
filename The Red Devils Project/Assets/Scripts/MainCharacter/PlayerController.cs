@@ -125,4 +125,5 @@ public class PlayerController : MonoBehaviour, IDataPersistence
     {
         spriteRenderer.sortingOrder = (int)(transform.position.y * -100);
     }
+
 }

@@ -16,8 +16,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.UI;
 using UnityEngine.EventSystems;
+using TMPro;
+
 
 public class EventSystemManager : MonoBehaviour
 {
@@ -25,6 +28,9 @@ public class EventSystemManager : MonoBehaviour
     public EventSystem eventSystem;
 
     public static EventSystemManager instance;
+
+
+    public InputSystemUIInputModule inputSystemUIInputModule;
 
 
     private void Awake()

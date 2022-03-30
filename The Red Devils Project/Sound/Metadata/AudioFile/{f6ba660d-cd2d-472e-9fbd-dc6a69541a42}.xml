@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f6ba660d-cd2d-472e-9fbd-dc6a69541a42}">
+		<property name="assetPath">
+			<value>Sabaton - A Ghost In The Trenches - 8 bit metal.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>203.37739229024945</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2d433700-2a2d-4a25-96db-ad1be9bda51b}</destination>
+		</relationship>
+	</object>
+</objects>

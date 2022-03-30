@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a1035cd1-b5e9-4310-8d31-f0b0aedabad5}">
+		<property name="assetPath">
+			<value>Sabaton - Devil Dogs - 8 bit metal.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>194.4957596371882</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2d433700-2a2d-4a25-96db-ad1be9bda51b}</destination>
+		</relationship>
+	</object>
+</objects>

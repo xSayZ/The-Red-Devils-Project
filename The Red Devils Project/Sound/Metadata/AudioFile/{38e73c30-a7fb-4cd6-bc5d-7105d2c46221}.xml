@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{38e73c30-a7fb-4cd6-bc5d-7105d2c46221}">
+		<property name="assetPath">
+			<value>Sabaton - Seven Pillars Of Wisdom - 8 bit metal.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>180.02392290249432</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2d433700-2a2d-4a25-96db-ad1be9bda51b}</destination>
+		</relationship>
+	</object>
+</objects>

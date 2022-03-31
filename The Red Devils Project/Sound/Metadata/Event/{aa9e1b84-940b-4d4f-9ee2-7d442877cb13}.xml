@@ -5,7 +5,7 @@
 			<value>NPC Battle</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{3722ced2-faee-4fa1-a3a0-e1713f4f0e7b}</destination>
@@ -59,18 +59,11 @@
 	<object class="EventAutomatableProperties" id="{f9cf5389-06da-4024-8ffb-ce0666e75554}" />
 	<object class="MarkerTrack" id="{bff7fc2d-606a-4659-910b-ed857ec103b6}" />
 	<object class="GroupTrack" id="{eb0e3606-30b2-464f-888a-c59c61a0f516}">
-		<relationship name="modules">
-			<destination>{13926771-51a7-405c-8788-7954010db8c9}</destination>
-		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{ce5852a5-8945-4892-9811-1f573c2aba97}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{5aed7a27-e7f3-4307-aa24-8c8024c197e8}">
-		<relationship name="modules">
-			<destination>{13926771-51a7-405c-8788-7954010db8c9}</destination>
-		</relationship>
-	</object>
+	<object class="Timeline" id="{5aed7a27-e7f3-4307-aa24-8c8024c197e8}" />
 	<object class="EventMixerMaster" id="{b08dfc2f-f171-4ebe-a870-29686a36e364}">
 		<relationship name="effectChain">
 			<destination>{3f2b8d85-bfd3-47f0-b1b4-a58a5f3726b8}</destination>
@@ -88,14 +81,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{d80d72c2-1077-479a-a270-137d65b6eb77}" />
-	<object class="SingleSound" id="{13926771-51a7-405c-8788-7954010db8c9}">
-		<property name="length">
-			<value>203.42004535147393</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{db57f900-e67b-4ef1-8f9b-092b0f89094d}</destination>
-		</relationship>
-	</object>
 	<object class="EventMixerGroup" id="{ce5852a5-8945-4892-9811-1f573c2aba97}">
 		<property name="name">
 			<value>Audio 1</value>

@@ -48,13 +48,13 @@ MonoBehaviour:
     Data4: 332101416
   Banks:
   - {fileID: 7168141639245200971}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 203420
+  Length: 0
 --- !u!114 &-2425602929992424645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
   - {fileID: 7168141639245200971}
   StringsBanks:
   - {fileID: 5975727508830571962}
-  cacheTime: 637842827513028659
+  cacheTime: 637843098014334037
   cacheVersion: 10
 --- !u!114 &5975727508830571962
 MonoBehaviour:
@@ -122,7 +122,7 @@ MonoBehaviour:
   Path: Sound/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637842827513028659
+  lastModified: 637843098014334037
   FileSizes:
   - Name: Desktop
     Value: 874
@@ -142,8 +142,8 @@ MonoBehaviour:
   Path: Sound/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637842827513008747
+  lastModified: 637843098014316862
   FileSizes:
   - Name: Desktop
-    Value: 6066624
+    Value: 6066400
   Exists: 1

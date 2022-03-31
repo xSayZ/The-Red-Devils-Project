@@ -7,13 +7,16 @@ public enum GameState { FreeRoam, Battle }
 
 public class GameManager : MonoBehaviour
 {
+
+    [Header("References")]
     [SerializeField] PlayerController playerController;
     [SerializeField] BattleSystem battleSystem;
     [SerializeField] Camera worldCamera;
 
     private static GameManager instance;
 
-    private bool isBattling = false;
+    [Header("Bool")]
+    [SerializeField] private bool isBattling = false;
 
     GameState state;
 
@@ -38,6 +41,8 @@ public class GameManager : MonoBehaviour
         state = GameState.Battle;
         battleSystem.gameObject.SetActive(true);
         worldCamera.gameObject.SetActive(false);
+
+        battleSystem.StartBattle();
     }
 
     public void EndBattle(bool won)

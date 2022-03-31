@@ -60,7 +60,11 @@ public class PauseMenuManager : MonoBehaviour
     public void QuitGame()
     {
         Resume();
-        SceneManager.LoadScene("MainMenu");
+
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+        Application.Quit();
     }
 
     void UpdateEventSystemDefaultSelected()

@@ -20,10 +20,10 @@ public class BattleSystem : MonoBehaviour
 
 
     BattleState state;
-    int currentAction;
-    int currentMove;
+    [SerializeField] int currentAction;
+    [SerializeField] int currentMove;
 
-    private void Start()
+    public void StartBattle()
     {
         StartCoroutine(SetupBattle());
     }
@@ -43,6 +43,7 @@ public class BattleSystem : MonoBehaviour
         yield return (dialogueBox.TypeDialogue($"A {enemyUnit.Enemy.Base.Name} decided to attack."));
 
         PlayerAction();
+        Reset();
     }
 
     void PlayerAction()
@@ -164,11 +165,12 @@ public class BattleSystem : MonoBehaviour
                 // Fight
                 PlayerMove();
             }
-       }
-       else if (currentAction == 1) 
-       {
-            // Run
-       }
+            else if (currentAction == 1)
+            {
+                // Run
+                OnBattleEnd(true);
+            }
+        }    
     }
 
     private void HandleMoveSelection()
@@ -181,7 +183,7 @@ public class BattleSystem : MonoBehaviour
         else if (InputManager.GetInstance().GetLeftPressed())
         {
             if (currentMove > 0)
-                ++currentMove;
+                --currentMove;
         }
         else if (InputManager.GetInstance().GetDownPressed())
         {
@@ -202,5 +204,11 @@ public class BattleSystem : MonoBehaviour
             dialogueBox.EnableDialogueText(true);
             StartCoroutine(PerformPlayerMove());
         }
+    }
+
+    private void Reset()
+    {
+        currentAction = 0;
+        currentMove = 0;
     }
 }
